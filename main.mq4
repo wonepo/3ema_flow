@@ -188,7 +188,7 @@ int OnCalculate(const int rates_total,
     {
        for(y=0; y<TotalSB; y++)
        {
-          int rs= emaFilter(1,ArraySB[y],StringToTF(ArrayTF[x]));
+          int rs= emaFilter(index,ArraySB[y],StringToTF(ArrayTF[x]));
                           
           ObjectDelete("rec"+string(x)+string(y)+string(ChartWindowFind()));
           ObjectDelete("val"+string(x)+string(y)+string(ChartWindowFind()));
